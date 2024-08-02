@@ -172,7 +172,7 @@ var crops = {
       "extra": 0,
       "extraPerc": 0,
       "price": Math.floor(25 * multi),
-      "keg": 300 * multi),
+      "keg": 300,
       "jarType": "Pickles",
       "kegType": "Pale Ale"
     }
@@ -244,7 +244,7 @@ var crops = {
       "extra": 0,
       "extraPerc": 0,
       "price": Math.floor(50 * multi),
-      "keg": 100 * multi),
+      "keg": 100,
       "jarType": "Pickles",
       "kegType": "Tea"
     }
@@ -741,7 +741,7 @@ var crops = {
       "extra": 0,
       "extraPerc": 0,
       "price": Math.floor(25 * multi),
-      "keg": 200 * multi),
+      "keg": 200,
       "jarType": "Pickles",
       "kegType": "Beer"
     }
@@ -1107,7 +1107,7 @@ var crops = {
       "extra": 0,
       "extraPerc": 0,
       // (Wild Horseradish + Daffodil + Leek + Dandelion) / 4
-      "price": Math.floor((50 + 30 + 60 + 40) / 4
+      "price": Math.floor((50 + 30 + 60 + 40) / 4 * 0.5)
     },
     "isWildseed": true
   },
