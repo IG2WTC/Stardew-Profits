@@ -3,15 +3,16 @@
  */
 
 // Crop List
+var multi = 0.5
 var crops = {
   "carrot": {
     "name": "Carrot",
     "url": "https://stardewvalleywiki.com/Carrot",
     "img": "carrot.png",
     "seeds": {
-      "sell": 15,
-      "pierre": 0,
-      "joja": 0,
+      "sell": Math.floor(15 * multi),
+      "pierre": Math.floor(0 * multi),
+      "joja": Math.floor(0 * multi),
       "special": 0,
       "specialLoc": "Unpurchasable",
       "specialUrl": "https://stardewvalleywiki.com/Carrot_Seeds"
@@ -23,7 +24,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 35,
+      "price": Math.floor(35 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -33,9 +34,9 @@ var crops = {
     "url": "https://stardewvalleywiki.com/Summer_Squash",
     "img": "summersquash.png",
     "seeds": {
-      "sell": 20,
-      "pierre": 0,
-      "joja": 0,
+      "sell": Math.floor(20 * multi),
+      "pierre": Math.floor(0 * multi),
+      "joja": Math.floor(0 * multi),
       "special": 0,
       "specialLoc": "Unpurchasable",
       "specialUrl": "https://stardewvalleywiki.com/Summer_Squash_Seeds"
@@ -47,7 +48,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 45,
+      "price": Math.floor(45 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -57,9 +58,9 @@ var crops = {
     "url": "https://stardewvalleywiki.com/Broccoli",
     "img": "broccoli.png",
     "seeds": {
-      "sell": 40,
-      "pierre": 0,
-      "joja": 0,
+      "sell": Math.floor(40 * multi),
+      "pierre": Math.floor(0 * multi),
+      "joja": Math.floor(0 * multi),
       "special": 0,
       "specialLoc": "Unpurchasable",
       "specialUrl": "https://stardewvalleywiki.com/Broccoli_Seeds"
@@ -71,7 +72,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 70,
+      "price": Math.floor(70 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -81,9 +82,9 @@ var crops = {
     "url": "https://stardewvalleywiki.com/Powdermelon",
     "img": "powdermelon.png",
     "seeds": {
-      "sell": 20,
-      "pierre": 0,
-      "joja": 0,
+      "sell": Math.floor(20 * multi),
+      "pierre": Math.floor(0 * multi),
+      "joja": Math.floor(0 * multi),
       "special": 0,
       "specialLoc": "Unpurchasable",
       "specialUrl": "https://stardewvalleywiki.com/Powdermelon_Seeds"
@@ -95,7 +96,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 70,
+      "price": Math.floor(70 * multi),
       "jarType": "Jelly",
       "kegType": "Wine",
       "dehydratorType": "Dried Fruit"
@@ -106,9 +107,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Amaranth",
     "img": "amaranth.png",
     "seeds": {
-      "sell": 35,
-      "pierre": 70,
-      "joja": 87,
+      "sell": Math.floor(35 * multi),
+      "pierre": Math.floor(70 * multi),
+      "joja": Math.floor(87 * multi),
       "special": 0,
       "specialLoc": "",
       "specialUrl": ""
@@ -120,7 +121,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 150,
+      "price": Math.floor(150 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -130,9 +131,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Grape",
     "img": "grape.png",
     "seeds": {
-      "sell": 30,
-      "pierre": 60,
-      "joja": 75,
+      "sell": Math.floor(30 * multi),
+      "pierre": Math.floor(60 * multi),
+      "joja": Math.floor(75 * multi),
       "special": 0,
       "specialLoc": "",
       "specialUrl": ""
@@ -144,7 +145,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 80,
+      "price": Math.floor(80 * multi),
       "jarType": "Jelly",
       "kegType": "Wine",
       "dehydratorType": "Raisins"
@@ -155,9 +156,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Hops",
     "img": "hops.png",
     "seeds": {
-      "sell": 30,
-      "pierre": 60,
-      "joja": 75,
+      "sell": Math.floor(30 * multi),
+      "pierre": Math.floor(60 * multi),
+      "joja": Math.floor(75 * multi),
       "special": 0,
       "specialLoc": "",
       "specialUrl": ""
@@ -169,8 +170,8 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 25,
-      "keg": 300,
+      "price": Math.floor(25 * multi),
+      "keg": 300 * multi),
       "jarType": "Pickles",
       "kegType": "Pale Ale"
     }
@@ -180,9 +181,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Pineapple",
     "img": "pineapple.png",
     "seeds": {
-      "sell": 240,
-      "pierre": 0,
-      "joja": 0,
+      "sell": Math.floor(240 * multi),
+      "pierre": Math.floor(0 * multi),
+      "joja": Math.floor(0 * multi),
       "special": 400,
       "specialLoc": "Island Trader",
       "specialUrl": "http://stardewvalleywiki.com/Island_Trader"
@@ -194,7 +195,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 300,
+      "price": Math.floor(300 * multi),
       "jarType": "Jelly",
       "kegType": "Wine",
       "dehydratorType": "Dried Fruit"
@@ -205,9 +206,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Sweet_Gem_Berry",
     "img": "sweetgemberry.png",
     "seeds": {
-      "sell": 200,
-      "pierre": 0,
-      "joja": 0,
+      "sell": Math.floor(200 * multi),
+      "pierre": Math.floor(0 * multi),
+      "joja": Math.floor(0 * multi),
       "special": 1000,
       "specialLoc": "Travelling Cart",
       "specialUrl": "http://stardewvalleywiki.com/Travelling_Cart"
@@ -219,7 +220,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 3000
+      "price": Math.floor(3000 * multi)
     }
   },
   "tealeaves": {
@@ -227,9 +228,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Tea_Leaves",
     "img": "tealeaves.png",
     "seeds": {
-      "sell": 0,
-      "pierre": 0,
-      "joja": 0,
+      "sell": Math.floor(0 * multi),
+      "pierre": Math.floor(0 * multi),
+      "joja": Math.floor(0 * multi),
       "special": 2500,
       "specialLoc": "Travelling Cart",
       "specialUrl": "http://stardewvalleywiki.com/Travelling_Cart"
@@ -241,8 +242,8 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 50,
-      "keg": 100,
+      "price": Math.floor(50 * multi),
+      "keg": 100 * multi),
       "jarType": "Pickles",
       "kegType": "Tea"
     }
@@ -252,9 +253,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Fairy_Rose",
     "img": "fairyrose.png",
     "seeds": {
-      "sell": 100,
-      "pierre": 200,
-      "joja": 250,
+      "sell": Math.floor(100 * multi),
+      "pierre": Math.floor(200 * multi),
+      "joja": Math.floor(250 * multi),
       "special": 0,
       "specialLoc": "",
       "specialUrl": ""
@@ -266,7 +267,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 290
+      "price": Math.floor(290 * multi)
     }
   },
   "tulip": {
@@ -274,9 +275,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Tulip",
     "img": "tulip.png",
     "seeds": {
-      "sell": 10,
-      "pierre": 20,
-      "joja": 25,
+      "sell": Math.floor(10 * multi),
+      "pierre": Math.floor(20 * multi),
+      "joja": Math.floor(25 * multi),
       "special": 0,
       "specialLoc": "",
       "specialUrl": ""
@@ -288,7 +289,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 30
+      "price": Math.floor(30 * multi)
     }
   },
   "bluejazz": {
@@ -296,9 +297,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Blue_Jazz",
     "img": "bluejazz.png",
     "seeds": {
-      "sell": 15,
-      "pierre": 30,
-      "joja": 37,
+      "sell": Math.floor(15 * multi),
+      "pierre": Math.floor(30 * multi),
+      "joja": Math.floor(37 * multi),
       "special": 0,
       "specialLoc": "",
       "specialUrl": ""
@@ -310,7 +311,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 50
+      "price": Math.floor(50 * multi)
     }
   },
   "sunflower": {
@@ -318,9 +319,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Sunflower",
     "img": "sunflower.png",
     "seeds": {
-      "sell": 20,
-      "pierre": 200,
-      "joja": 125,
+      "sell": Math.floor(20 * multi),
+      "pierre": Math.floor(200 * multi),
+      "joja": Math.floor(125 * multi),
       "special": 0,
       "specialLoc": "",
       "specialUrl": ""
@@ -332,7 +333,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 80
+      "price": Math.floor(80 * multi)
     }
   },
   "coffeebean": {
@@ -340,9 +341,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Coffee_Bean",
     "img": "coffeebean.png",
     "seeds": {
-      "sell": 0,
-      "pierre": 0,
-      "joja": 0,
+      "sell": Math.floor(0 * multi),
+      "pierre": Math.floor(0 * multi),
+      "joja": Math.floor(0 * multi),
       "special": 2500,
       "specialLoc": "Travelling Cart",
       "specialUrl": "http://stardewvalleywiki.com/Travelling_Cart"
@@ -354,7 +355,7 @@ var crops = {
     "produce": {
       "extra": 3,
       "extraPerc": 1,
-      "price": 15,
+      "price": Math.floor(15 * multi),
       "keg": 150 / 5,
       "kegType": "Coffee"
     }
@@ -364,9 +365,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Poppy",
     "img": "poppy.png",
     "seeds": {
-      "sell": 50,
-      "pierre": 100,
-      "joja": 125,
+      "sell": Math.floor(50 * multi),
+      "pierre": Math.floor(100 * multi),
+      "joja": Math.floor(125 * multi),
       "special": 0,
       "specialLoc": "",
       "specialUrl": ""
@@ -378,7 +379,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 140
+      "price": Math.floor(140 * multi)
     }
   },
   "summerspangle": {
@@ -386,9 +387,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Summer_Spangle",
     "img": "summerspangle.png",
     "seeds": {
-      "sell": 25,
-      "pierre": 50,
-      "joja": 62,
+      "sell": Math.floor(25 * multi),
+      "pierre": Math.floor(50 * multi),
+      "joja": Math.floor(62 * multi),
       "special": 0,
       "specialLoc": "",
       "specialUrl": ""
@@ -400,7 +401,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 90
+      "price": Math.floor(90 * multi)
     }
   },
   "parsnip": {
@@ -408,9 +409,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Parsnip",
     "img": "parsnip.png",
     "seeds": {
-      "sell": 10,
-      "pierre": 20,
-      "joja": 25,
+      "sell": Math.floor(10 * multi),
+      "pierre": Math.floor(20 * multi),
+      "joja": Math.floor(25 * multi),
       "special": 0,
       "specialLoc": "",
       "specialUrl": ""
@@ -422,7 +423,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 35,
+      "price": Math.floor(35 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -432,9 +433,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Green_Bean",
     "img": "greenbean.png",
     "seeds": {
-      "sell": 30,
-      "pierre": 60,
-      "joja": 75,
+      "sell": Math.floor(30 * multi),
+      "pierre": Math.floor(60 * multi),
+      "joja": Math.floor(75 * multi),
       "special": 0,
       "specialLoc": "",
       "specialUrl": ""
@@ -446,7 +447,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 40,
+      "price": Math.floor(40 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -456,9 +457,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Cauliflower",
     "img": "cauliflower.png",
     "seeds": {
-      "sell": 40,
-      "pierre": 80,
-      "joja": 100,
+      "sell": Math.floor(40 * multi),
+      "pierre": Math.floor(80 * multi),
+      "joja": Math.floor(100 * multi),
       "special": 0,
       "specialLoc": "",
       "specialUrl": ""
@@ -470,7 +471,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 175,
+      "price": Math.floor(175 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -480,9 +481,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Potato",
     "img": "potato.png",
     "seeds": {
-      "sell": 25,
-      "pierre": 50,
-      "joja": 62,
+      "sell": Math.floor(25 * multi),
+      "pierre": Math.floor(50 * multi),
+      "joja": Math.floor(62 * multi),
       "special": 0,
       "specialLoc": "",
       "specialUrl": ""
@@ -494,7 +495,7 @@ var crops = {
     "produce": {
       "extra": 1,
       "extraPerc": 0.25, // technically (0.2^1) + (0.2^2) + (0.2^3) ...
-      "price": 80,
+      "price": Math.floor(80 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -504,9 +505,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Garlic",
     "img": "garlic.png",
     "seeds": {
-      "sell": 20,
-      "pierre": 40,
-      "joja": 0,
+      "sell": Math.floor(20 * multi),
+      "pierre": Math.floor(40 * multi),
+      "joja": Math.floor(0 * multi),
       "special": 0,
       "specialLoc": "",
       "specialUrl": ""
@@ -518,7 +519,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 60,
+      "price": Math.floor(60 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -528,9 +529,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Taro_Root",
     "img": "taroroot.png",
     "seeds": {
-      "sell": 20,
-      "pierre": 0,
-      "joja": 0,
+      "sell": Math.floor(20 * multi),
+      "pierre": Math.floor(0 * multi),
+      "joja": Math.floor(0 * multi),
       "special": 24,
       "specialLoc": "Island Trader",
       "specialUrl": "http://stardewvalleywiki.com/Island_Trader"
@@ -542,7 +543,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 100,
+      "price": Math.floor(100 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -552,9 +553,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Kale",
     "img": "kale.png",
     "seeds": {
-      "sell": 35,
-      "pierre": 70,
-      "joja": 87,
+      "sell": Math.floor(35 * multi),
+      "pierre": Math.floor(70 * multi),
+      "joja": Math.floor(87 * multi),
       "special": 0,
       "specialLoc": "",
       "specialUrl": ""
@@ -566,7 +567,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 110,
+      "price": Math.floor(110 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -576,9 +577,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Unmilled_Rice",
     "img": "unmilledrice.png",
     "seeds": {
-      "sell": 20,
-      "pierre": 40,
-      "joja": 0,
+      "sell": Math.floor(20 * multi),
+      "pierre": Math.floor(40 * multi),
+      "joja": Math.floor(0 * multi),
       "special": 1000,
       "specialLoc": "Travelling Cart",
       "specialUrl": "http://stardewvalleywiki.com/Travelling_Cart"
@@ -590,7 +591,7 @@ var crops = {
     "produce": {
       "extra": 1,
       "extraPerc": 0.11,
-      "price": 30,
+      "price": Math.floor(30 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -600,9 +601,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Rhubarb",
     "img": "rhubarb.png",
     "seeds": {
-      "sell": 50,
-      "pierre": 0,
-      "joja": 0,
+      "sell": Math.floor(50 * multi),
+      "pierre": Math.floor(0 * multi),
+      "joja": Math.floor(0 * multi),
       "special": 100,
       "specialLoc": "Oasis",
       "specialUrl": "http://stardewvalleywiki.com/Oasis"
@@ -614,7 +615,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 220,
+      "price": Math.floor(220 * multi),
       "jarType": "Jelly",
       "kegType": "Wine",
       "dehydratorType": "Dried Fruit"
@@ -625,9 +626,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Melon",
     "img": "melon.png",
     "seeds": {
-      "sell": 40,
-      "pierre": 80,
-      "joja": 100,
+      "sell": Math.floor(40 * multi),
+      "pierre": Math.floor(80 * multi),
+      "joja": Math.floor(100 * multi),
       "special": 0,
       "specialLoc": "",
       "specialUrl": ""
@@ -639,7 +640,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 250,
+      "price": Math.floor(250 * multi),
       "jarType": "Jelly",
       "kegType": "Wine",
       "dehydratorType": "Dried Fruit"
@@ -650,9 +651,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Tomato",
     "img": "tomato.png",
     "seeds": {
-      "sell": 25,
-      "pierre": 50,
-      "joja": 62,
+      "sell": Math.floor(25 * multi),
+      "pierre": Math.floor(50 * multi),
+      "joja": Math.floor(62 * multi),
       "special": 0,
       "specialLoc": "",
       "specialUrl": ""
@@ -664,7 +665,7 @@ var crops = {
     "produce": {
       "extra": 1,
       "extraPerc": 0.05,
-      "price": 60,
+      "price": Math.floor(60 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -674,9 +675,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Blueberry",
     "img": "blueberry.png",
     "seeds": {
-      "sell": 40,
-      "pierre": 80,
-      "joja": 0,
+      "sell": Math.floor(40 * multi),
+      "pierre": Math.floor(80 * multi),
+      "joja": Math.floor(0 * multi),
       "special": 0,
       "specialLoc": "",
       "specialUrl": ""
@@ -688,7 +689,7 @@ var crops = {
     "produce": {
       "extra": 2,
       "extraPerc": 1,
-      "price": 50,
+      "price": Math.floor(50 * multi),
       "jarType": "Jelly",
       "kegType": "Wine",
       "dehydratorType": "Dried Fruit"
@@ -699,9 +700,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Hot_Pepper",
     "img": "hotpepper.png",
     "seeds": {
-      "sell": 20,
-      "pierre": 40,
-      "joja": 50,
+      "sell": Math.floor(20 * multi),
+      "pierre": Math.floor(40 * multi),
+      "joja": Math.floor(50 * multi),
       "special": 0,
       "specialLoc": "",
       "specialUrl": ""
@@ -713,7 +714,7 @@ var crops = {
     "produce": {
       "extra": 1,
       "extraPerc": 0.03,
-      "price": 40,
+      "price": Math.floor(40 * multi),
       "jarType": "Jelly",
       "kegType": "Wine",
       "dehydratorType": "Dried Fruit"
@@ -724,9 +725,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Wheat",
     "img": "wheat.png",
     "seeds": {
-      "sell": 5,
-      "pierre": 10,
-      "joja": 12,
+      "sell": Math.floor(5 * multi),
+      "pierre": Math.floor(10 * multi),
+      "joja": Math.floor(12 * multi),
       "special": 0,
       "specialLoc": "",
       "specialUrl": ""
@@ -738,8 +739,8 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 25,
-      "keg": 200,
+      "price": Math.floor(25 * multi),
+      "keg": 200 * multi),
       "jarType": "Pickles",
       "kegType": "Beer"
     }
@@ -749,9 +750,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Radish",
     "img": "radish.png",
     "seeds": {
-      "sell": 20,
-      "pierre": 40,
-      "joja": 50,
+      "sell": Math.floor(20 * multi),
+      "pierre": Math.floor(40 * multi),
+      "joja": Math.floor(50 * multi),
       "special": 0,
       "specialLoc": "",
       "specialUrl": ""
@@ -763,7 +764,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 90,
+      "price": Math.floor(90 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -773,9 +774,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Red_Cabbage",
     "img": "redcabbage.png",
     "seeds": {
-      "sell": 50,
-      "pierre": 100,
-      "joja": 0,
+      "sell": Math.floor(50 * multi),
+      "pierre": Math.floor(100 * multi),
+      "joja": Math.floor(0 * multi),
       "special": 0,
       "specialLoc": "",
       "specialUrl": ""
@@ -787,7 +788,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 260,
+      "price": Math.floor(260 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -797,9 +798,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Starfruit",
     "img": "starfruit.png",
     "seeds": {
-      "sell": 200,
-      "pierre": 0,
-      "joja": 0,
+      "sell": Math.floor(200 * multi),
+      "pierre": Math.floor(0 * multi),
+      "joja": Math.floor(0 * multi),
       "special": 400,
       "specialLoc": "Oasis",
       "specialUrl": "http://stardewvalleywiki.com/Oasis"
@@ -811,7 +812,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 750,
+      "price": Math.floor(750 * multi),
       "jarType": "Jelly",
       "kegType": "Wine",
       "dehydratorType": "Dried Fruit"
@@ -822,9 +823,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Corn",
     "img": "corn.png",
     "seeds": {
-      "sell": 75,
-      "pierre": 150,
-      "joja": 187,
+      "sell": Math.floor(75 * multi),
+      "pierre": Math.floor(150 * multi),
+      "joja": Math.floor(187 * multi),
       "special": 0,
       "specialLoc": "",
       "specialUrl": ""
@@ -836,7 +837,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 50,
+      "price": Math.floor(50 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -846,9 +847,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Eggplant",
     "img": "eggplant.png",
     "seeds": {
-      "sell": 10,
-      "pierre": 20,
-      "joja": 25,
+      "sell": Math.floor(10 * multi),
+      "pierre": Math.floor(20 * multi),
+      "joja": Math.floor(25 * multi),
       "special": 0,
       "specialLoc": "",
       "specialUrl": ""
@@ -860,7 +861,7 @@ var crops = {
     "produce": {
       "extra": 1,
       "extraPerc": 0.002,
-      "price": 60,
+      "price": Math.floor(60 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -870,9 +871,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Artichoke",
     "img": "artichoke.png",
     "seeds": {
-      "sell": 15,
-      "pierre": 30,
-      "joja": 0,
+      "sell": Math.floor(15 * multi),
+      "pierre": Math.floor(30 * multi),
+      "joja": Math.floor(0 * multi),
       "special": 0,
       "specialLoc": "",
       "specialUrl": ""
@@ -884,7 +885,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 160,
+      "price": Math.floor(160 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -894,9 +895,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Pumpkin",
     "img": "pumpkin.png",
     "seeds": {
-      "sell": 50,
-      "pierre": 100,
-      "joja": 125,
+      "sell": Math.floor(50 * multi),
+      "pierre": Math.floor(100 * multi),
+      "joja": Math.floor(125 * multi),
       "special": 0,
       "specialLoc": "",
       "specialUrl": ""
@@ -908,7 +909,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 320,
+      "price": Math.floor(320 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -918,9 +919,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Bok_Choy",
     "img": "bokchoy.png",
     "seeds": {
-      "sell": 25,
-      "pierre": 50,
-      "joja": 62,
+      "sell": Math.floor(25 * multi),
+      "pierre": Math.floor(50 * multi),
+      "joja": Math.floor(62 * multi),
       "special": 0,
       "specialLoc": "",
       "specialUrl": ""
@@ -932,7 +933,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 80,
+      "price": Math.floor(80 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -942,9 +943,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Yam",
     "img": "yam.png",
     "seeds": {
-      "sell": 30,
-      "pierre": 60,
-      "joja": 75,
+      "sell": Math.floor(30 * multi),
+      "pierre": Math.floor(60 * multi),
+      "joja": Math.floor(75 * multi),
       "special": 0,
       "specialLoc": "",
       "specialUrl": ""
@@ -956,7 +957,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 160,
+      "price": Math.floor(160 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -966,9 +967,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Cranberries",
     "img": "cranberries.png",
     "seeds": {
-      "sell": 60,
-      "pierre": 240,
-      "joja": 300,
+      "sell": Math.floor(60 * multi),
+      "pierre": Math.floor(240 * multi),
+      "joja": Math.floor(300 * multi),
       "special": 0,
       "specialLoc": "",
       "specialUrl": ""
@@ -980,7 +981,7 @@ var crops = {
     "produce": {
       "extra": 1,
       "extraPerc": 1,
-      "price": 75,
+      "price": Math.floor(75 * multi),
       "jarType": "Jelly",
       "kegType": "Wine",
       "dehydratorType": "Dried Fruit"
@@ -991,9 +992,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Beet",
     "img": "beet.png",
     "seeds": {
-      "sell": 10,
-      "pierre": 0,
-      "joja": 0,
+      "sell": Math.floor(10 * multi),
+      "pierre": Math.floor(0 * multi),
+      "joja": Math.floor(0 * multi),
       "special": 20,
       "specialLoc": "Oasis",
       "specialUrl": "http://stardewvalleywiki.com/Oasis"
@@ -1005,7 +1006,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 100,
+      "price": Math.floor(100 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -1015,9 +1016,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Ancient_Fruit",
     "img": "ancientfruit.png",
     "seeds": {
-      "sell": 30,
-      "pierre": 0,
-      "joja": 0,
+      "sell": Math.floor(30 * multi),
+      "pierre": Math.floor(0 * multi),
+      "joja": Math.floor(0 * multi),
       "special": 0,
       "specialLoc": "Unpurchasable",
       "specialUrl": "https://stardewvalleywiki.com/Ancient_Seeds"
@@ -1029,7 +1030,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 550,
+      "price": Math.floor(550 * multi),
       "jarType": "Jelly",
       "kegType": "Wine",
       "dehydratorType": "Dried Fruit"
@@ -1040,9 +1041,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Cactus_Fruit",
     "img": "cactusfruit.png",
     "seeds": {
-      "sell": 0,
-      "pierre": 0,
-      "joja": 0,
+      "sell": Math.floor(0 * multi),
+      "pierre": Math.floor(0 * multi),
+      "joja": Math.floor(0 * multi),
       "special": 150,
       "specialLoc": "Oasis",
       "specialUrl": "http://stardewvalleywiki.com/Oasis"
@@ -1054,7 +1055,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": 75,
+      "price": Math.floor(75 * multi),
       "jarType": "Jelly",
       "kegType": "Wine",
       "dehydratorType": "Dried Fruit"
@@ -1065,9 +1066,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Strawberry",
     "img": "strawberry.png",
     "seeds": {
-      "sell": 0,
-      "pierre": 0,
-      "joja": 0,
+      "sell": Math.floor(0 * multi),
+      "pierre": Math.floor(0 * multi),
+      "joja": Math.floor(0 * multi),
       "special": 100,
       "specialLoc": "Egg Festival",
       "specialUrl": "http://stardewvalleywiki.com/Egg_Festival"
@@ -1079,7 +1080,7 @@ var crops = {
     "produce": {
       "extra": 1,
       "extraPerc": 0.02,
-      "price": 120,
+      "price": Math.floor(120 * multi),
       "jarType": "Jelly",
       "kegType": "Wine",
       "dehydratorType": "Dried Fruit"
@@ -1090,9 +1091,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Spring_Seeds",
     "img": "springseeds.png",
     "seeds": {
-      "sell": 0,
-      "pierre": 0,
-      "joja": 0,
+      "sell": Math.floor(0 * multi),
+      "pierre": Math.floor(0 * multi),
+      "joja": Math.floor(0 * multi),
       "special": 1000,
       "specialLoc": "Travelling Cart",
       "specialUrl": "http://stardewvalleywiki.com/Travelling_Cart"
@@ -1105,7 +1106,7 @@ var crops = {
       "extra": 0,
       "extraPerc": 0,
       // (Wild Horseradish + Daffodil + Leek + Dandelion) / 4
-      "price": (50 + 30 + 60 + 40) / 4
+      "price": Math.floor((50 + 30 + 60 + 40) / 4
     },
     "isWildseed": true
   },
@@ -1114,9 +1115,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Summer_Seeds",
     "img": "summerseeds.png",
     "seeds": {
-      "sell": 0,
-      "pierre": 0,
-      "joja": 0,
+      "sell": Math.floor(0 * multi),
+      "pierre": Math.floor(0 * multi),
+      "joja": Math.floor(0 * multi),
       "special": 1000,
       "specialLoc": "Travelling Cart",
       "specialUrl": "http://stardewvalleywiki.com/Travelling_Cart"
@@ -1129,7 +1130,7 @@ var crops = {
       "extra": 0,
       "extraPerc": 0,
       // (Spice Berry + Grape + Sweet Pea) / 3
-      "price": (80 + 80 + 50) / 3,
+      "price": Math.floor((80 + 80 + 50) / 3 * multi),
       "jarType": "Jelly",
       "kegType": "Wine"
     },
@@ -1140,9 +1141,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Fall_Seeds",
     "img": "fallseeds.png",
     "seeds": {
-      "sell": 0,
-      "pierre": 0,
-      "joja": 0,
+      "sell": Math.floor(0 * multi),
+      "pierre": Math.floor(0 * multi),
+      "joja": Math.floor(0 * multi),
       "special": 1000,
       "specialLoc": "Travelling Cart",
       "specialUrl": "http://stardewvalleywiki.com/Travelling_Cart"
@@ -1155,7 +1156,7 @@ var crops = {
       "extra": 0,
       "extraPerc": 0,
       // (Blackberry + Common Mushroom + Hazelnut + Wild Plum) / 4
-      "price": (20 + 40 + 90 + 80) / 4,
+      "price": Math.floor((20 + 40 + 90 + 80) / 4 * multi),
       "jarType": "Jelly",
       "kegType": "Wine"
     },
@@ -1166,9 +1167,9 @@ var crops = {
     "url": "http://stardewvalleywiki.com/Winter_Seeds",
     "img": "winterseeds.png",
     "seeds": {
-      "sell": 0,
-      "pierre": 0,
-      "joja": 0,
+      "sell": Math.floor(0 * multi),
+      "pierre": Math.floor(0 * multi),
+      "joja": Math.floor(0 * multi),
       "special": 1000,
       "specialLoc": "Travelling Cart",
       "specialUrl": "http://stardewvalleywiki.com/Travelling_Cart"
@@ -1181,7 +1182,7 @@ var crops = {
       "extra": 0,
       "extraPerc": 0,
       // (Crocus + Crystal Fruit + Snow Yam + Winter Root) / 4
-      "price": (60 + 150 + 100 + 70) / 4,
+      "price": Math.floor((60 + 150 + 100 + 70) / 4 * multi),
       "jarType": "Jelly",
       "kegType": "Wine"
     },
