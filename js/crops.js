@@ -3,7 +3,7 @@
  */
 
 // Crop List
-var multi = 0.5
+var multi = 1
 var crops = {
   "carrot": {
     "name": "Carrot",
@@ -121,7 +121,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": Math.floor(150 * multi),
+      "price": Math.floor(200 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -171,7 +171,7 @@ var crops = {
       "extra": 0,
       "extraPerc": 0,
       "price": Math.floor(25 * multi),
-      "keg": 300,
+      "keg": 150,
       "jarType": "Pickles",
       "kegType": "Pale Ale"
     }
@@ -195,7 +195,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": Math.floor(300 * multi),
+      "price": Math.floor(270 * multi),
       "jarType": "Jelly",
       "kegType": "Wine",
       "dehydratorType": "Dried Fruit"
@@ -220,7 +220,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": Math.floor(3000 * multi)
+      "price": Math.floor(2000 * multi)
     }
   },
   "tealeaves": {
@@ -267,7 +267,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": Math.floor(290 * multi)
+      "price": Math.floor(250 * multi)
     }
   },
   "tulip": {
@@ -289,7 +289,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": Math.floor(30 * multi)
+      "price": Math.floor(60 * multi)
     }
   },
   "bluejazz": {
@@ -311,7 +311,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": Math.floor(50 * multi)
+      "price": Math.floor(90 * multi)
     }
   },
   "sunflower": {
@@ -333,7 +333,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": Math.floor(80 * multi)
+      "price": Math.floor(140 * multi)
     }
   },
   "coffeebean": {
@@ -355,7 +355,7 @@ var crops = {
     "produce": {
       "extra": 3,
       "extraPerc": 1,
-      "price": Math.floor(15 * multi),
+      "price": Math.floor(10 * multi),
       "keg": 150 / 5,
       "kegType": "Coffee"
     }
@@ -401,7 +401,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": Math.floor(90 * multi)
+      "price": Math.floor(150 * multi)
     }
   },
   "parsnip": {
@@ -423,7 +423,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": Math.floor(35 * multi),
+      "price": Math.floor(45 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -447,7 +447,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": Math.floor(40 * multi),
+      "price": Math.floor(55 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -519,7 +519,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": Math.floor(60 * multi),
+      "price": Math.floor(85 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -543,7 +543,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": Math.floor(100 * multi),
+      "price": Math.floor(170 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -591,7 +591,7 @@ var crops = {
     "produce": {
       "extra": 1,
       "extraPerc": 0.11,
-      "price": Math.floor(30 * multi),
+      "price": Math.floor(100 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -640,7 +640,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": Math.floor(250 * multi),
+      "price": Math.floor(190 * multi),
       "jarType": "Jelly",
       "kegType": "Wine",
       "dehydratorType": "Dried Fruit"
@@ -689,7 +689,7 @@ var crops = {
     "produce": {
       "extra": 2,
       "extraPerc": 1,
-      "price": Math.floor(50 * multi),
+      "price": Math.floor(40 * multi),
       "jarType": "Jelly",
       "kegType": "Wine",
       "dehydratorType": "Dried Fruit"
@@ -739,7 +739,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": Math.floor(25 * multi),
+      "price": Math.floor(60 * multi),
       "keg": 200,
       "jarType": "Pickles",
       "kegType": "Beer"
@@ -764,7 +764,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": Math.floor(90 * multi),
+      "price": Math.floor(120 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -788,7 +788,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": Math.floor(260 * multi),
+      "price": Math.floor(200 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -812,7 +812,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": Math.floor(750 * multi),
+      "price": Math.floor(500 * multi),
       "jarType": "Jelly",
       "kegType": "Wine",
       "dehydratorType": "Dried Fruit"
@@ -837,7 +837,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": Math.floor(50 * multi),
+      "price": Math.floor(80 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -861,7 +861,7 @@ var crops = {
     "produce": {
       "extra": 1,
       "extraPerc": 0.002,
-      "price": Math.floor(60 * multi),
+      "price": Math.floor(100 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -909,7 +909,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": Math.floor(320 * multi),
+      "price": Math.floor(240 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -957,7 +957,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": Math.floor(160 * multi),
+      "price": Math.floor(200 * multi),
       "jarType": "Pickles",
       "kegType": "Juice"
     }
@@ -981,7 +981,7 @@ var crops = {
     "produce": {
       "extra": 1,
       "extraPerc": 1,
-      "price": Math.floor(75 * multi),
+      "price": Math.floor(60 * multi),
       "jarType": "Jelly",
       "kegType": "Wine",
       "dehydratorType": "Dried Fruit"
@@ -1030,7 +1030,7 @@ var crops = {
     "produce": {
       "extra": 0,
       "extraPerc": 0,
-      "price": Math.floor(550 * multi),
+      "price": Math.floor(300 * multi),
       "jarType": "Jelly",
       "kegType": "Wine",
       "dehydratorType": "Dried Fruit"
@@ -1080,7 +1080,7 @@ var crops = {
     "produce": {
       "extra": 1,
       "extraPerc": 0.02,
-      "price": Math.floor(120 * multi),
+      "price": Math.floor(90 * multi),
       "jarType": "Jelly",
       "kegType": "Wine",
       "dehydratorType": "Dried Fruit"
