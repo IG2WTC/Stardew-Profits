@@ -3,7 +3,6 @@
  */
 
 // Crop List
-// yay!
 var multi = 0.5
 var crops = {
   "carrot": {
@@ -185,7 +184,7 @@ var crops = {
       "sell": Math.floor(240 * multi),
       "pierre": Math.floor(0 * multi),
       "joja": Math.floor(0 * multi),
-      "special": 400,
+      "special": Math.floor(400 * multi),
       "specialLoc": "Island Trader",
       "specialUrl": "http://stardewvalleywiki.com/Island_Trader"
     },
@@ -210,7 +209,7 @@ var crops = {
       "sell": Math.floor(200 * multi),
       "pierre": Math.floor(0 * multi),
       "joja": Math.floor(0 * multi),
-      "special": 1000,
+      "special": Math.floor(1000 * multi),
       "specialLoc": "Travelling Cart",
       "specialUrl": "http://stardewvalleywiki.com/Travelling_Cart"
     },
@@ -232,7 +231,7 @@ var crops = {
       "sell": Math.floor(0 * multi),
       "pierre": Math.floor(0 * multi),
       "joja": Math.floor(0 * multi),
-      "special": 2500,
+      "special": Math.floor(2500 * multi),
       "specialLoc": "Travelling Cart",
       "specialUrl": "http://stardewvalleywiki.com/Travelling_Cart"
     },
@@ -345,7 +344,7 @@ var crops = {
       "sell": Math.floor(0 * multi),
       "pierre": Math.floor(0 * multi),
       "joja": Math.floor(0 * multi),
-      "special": 2500,
+      "special": Math.floor(2500 * multi),
       "specialLoc": "Travelling Cart",
       "specialUrl": "http://stardewvalleywiki.com/Travelling_Cart"
     },
@@ -533,7 +532,7 @@ var crops = {
       "sell": Math.floor(20 * multi),
       "pierre": Math.floor(0 * multi),
       "joja": Math.floor(0 * multi),
-      "special": 24,
+      "special": Math.floor(24 * multi),
       "specialLoc": "Island Trader",
       "specialUrl": "http://stardewvalleywiki.com/Island_Trader"
     },
@@ -581,7 +580,7 @@ var crops = {
       "sell": Math.floor(20 * multi),
       "pierre": Math.floor(40 * multi),
       "joja": Math.floor(0 * multi),
-      "special": 1000,
+      "special": Math.floor(1000 * multi),
       "specialLoc": "Travelling Cart",
       "specialUrl": "http://stardewvalleywiki.com/Travelling_Cart"
     },
@@ -605,7 +604,7 @@ var crops = {
       "sell": Math.floor(50 * multi),
       "pierre": Math.floor(0 * multi),
       "joja": Math.floor(0 * multi),
-      "special": 100,
+      "special": Math.floor(100 * multi),
       "specialLoc": "Oasis",
       "specialUrl": "http://stardewvalleywiki.com/Oasis"
     },
@@ -802,7 +801,7 @@ var crops = {
       "sell": Math.floor(200 * multi),
       "pierre": Math.floor(0 * multi),
       "joja": Math.floor(0 * multi),
-      "special": 400,
+      "special": Math.floor(400 * multi),
       "specialLoc": "Oasis",
       "specialUrl": "http://stardewvalleywiki.com/Oasis"
     },
@@ -996,7 +995,7 @@ var crops = {
       "sell": Math.floor(10 * multi),
       "pierre": Math.floor(0 * multi),
       "joja": Math.floor(0 * multi),
-      "special": 20,
+      "special": Math.floor(20 * multi),
       "specialLoc": "Oasis",
       "specialUrl": "http://stardewvalleywiki.com/Oasis"
     },
@@ -1045,7 +1044,7 @@ var crops = {
       "sell": Math.floor(0 * multi),
       "pierre": Math.floor(0 * multi),
       "joja": Math.floor(0 * multi),
-      "special": 150,
+      "special": Math.floor(150 * multi),
       "specialLoc": "Oasis",
       "specialUrl": "http://stardewvalleywiki.com/Oasis"
     },
@@ -1070,7 +1069,7 @@ var crops = {
       "sell": Math.floor(0 * multi),
       "pierre": Math.floor(0 * multi),
       "joja": Math.floor(0 * multi),
-      "special": 100,
+      "special": Math.floor(100 * multi),
       "specialLoc": "Egg Festival",
       "specialUrl": "http://stardewvalleywiki.com/Egg_Festival"
     },
@@ -1095,7 +1094,7 @@ var crops = {
       "sell": Math.floor(0 * multi),
       "pierre": Math.floor(0 * multi),
       "joja": Math.floor(0 * multi),
-      "special": 1000,
+      "special": Math.floor(1000 * multi),
       "specialLoc": "Travelling Cart",
       "specialUrl": "http://stardewvalleywiki.com/Travelling_Cart"
     },
@@ -1119,7 +1118,7 @@ var crops = {
       "sell": Math.floor(0 * multi),
       "pierre": Math.floor(0 * multi),
       "joja": Math.floor(0 * multi),
-      "special": 1000,
+      "special": Math.floor(1000 * multi),
       "specialLoc": "Travelling Cart",
       "specialUrl": "http://stardewvalleywiki.com/Travelling_Cart"
     },
@@ -1145,7 +1144,7 @@ var crops = {
       "sell": Math.floor(0 * multi),
       "pierre": Math.floor(0 * multi),
       "joja": Math.floor(0 * multi),
-      "special": 1000,
+      "special": Math.floor(1000 * multi),
       "specialLoc": "Travelling Cart",
       "specialUrl": "http://stardewvalleywiki.com/Travelling_Cart"
     },
@@ -1171,7 +1170,7 @@ var crops = {
       "sell": Math.floor(0 * multi),
       "pierre": Math.floor(0 * multi),
       "joja": Math.floor(0 * multi),
-      "special": 1000,
+      "special": Math.floor(1000 * multi),
       "specialLoc": "Travelling Cart",
       "specialUrl": "http://stardewvalleywiki.com/Travelling_Cart"
     },
