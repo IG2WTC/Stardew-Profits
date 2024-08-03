@@ -410,7 +410,7 @@ function profit(crop) {
                         itemsMade = itemsMadeNew;
                     }
                 }
-				console.log("crop.harvests: ", crop.harvests), "options.days: ", options.days, "total_harvest: ", total_harvest, "num_planted: ", num_planted, "options.equipment: ", options.equipment, "" ;
+				console.log("crop.harvests: ", crop.harvests, "options.days: ", options.days, "total_harvest: ", total_harvest, "num_planted: ", num_planted, "options.equipment: ", options.equipment);
 				var jarCycles = 0;
                 if (options.equipment > 0) {
                     if (produce == 1 || produce == 2) {
