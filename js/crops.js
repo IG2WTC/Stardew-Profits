@@ -3,7 +3,7 @@
  */
 
 // Crop List
-var multi = 0.5
+var multi = 
 var crops = {
   "carrot": {
     "name": "Carrot",
