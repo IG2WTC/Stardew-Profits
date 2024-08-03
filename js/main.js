@@ -411,16 +411,36 @@ function profit(crop) {
                     }
                 }
 
+				var jarCycles = 0;
                 if (options.equipment > 0) {
                     if (produce == 1 || produce == 2) {
-                        cropsLeft += Math.max(0, itemsMade - options.equipment) * crop.harvests;
-                        itemsMade = Math.min(options.equipment, itemsMade) * crop.harvests;
+                        //cropsLeft += Math.max(0, itemsMade - options.equipment) * crop.harvests;
+                        //itemsMade = Math.min(options.equipment, itemsMade) * crop.harvests;
+						if (crop.growth.regrow == 0) {
+							jarCycles = Math.floor((crop.growth.initial * (crop.harvests - 1)) + (options.days - crop.growth.initial * crop.harvests - 1) / 3);
+    					}
+						else {
+        					jarCycles = Math.floor((crop.growth.regrow * (crop.harvests - 1)) + (options.days - crop.growth.initial - crop.growth.regrow * (crop.harvests - 1) - 1));
+						}
+						usableCrops = Math.floor(total_harvest * (crop.harvests - 1)) +
+							Math.min(Math.floor(crop.growth.regrow > 0 ? (options.days - crop.growth.initial - crop.growth.regrow * (crop.harvests - 1) - 1) / 3 :
+							(options.days - crop.growth.initial * crop.harvests - 1) / 3) * num_planted, num_planted * perHarvest);
+						var maxJarProcesses = jarCycles * options.equipment
+						itemsMade = Math.min(maxJarProcesses, usableCrops - total_harvest);
+						
+						if (usableCrops > maxJarProcesses) {
+							cropsLeft += totalProduce - maxJarProcesses;
+						}
+						else{
+							cropsLeft += totalProduce - usableCrops;
+						}
+					}
                     }
                     if (produce == 4 && !options.byHarvest) {
                         cropsLeft += Math.max(0, itemsMade - options.equipment) * 5;
                         itemsMade = Math.min(options.equipment, itemsMade);
                     }
-                }
+						
                 else {
                     if (produce == 1 || produce == 2) {
                         itemsMade *= crop.harvests;
