@@ -429,10 +429,10 @@ function profit(crop) {
 						itemsMade = Math.min(maxJarProcesses, usableCrops - total_harvest);
 						
 						if (usableCrops > maxJarProcesses) {
-							cropsLeft += totalProduce - maxJarProcesses;
+							cropsLeft += total_crops - maxJarProcesses;
 						}
 						else{
-							cropsLeft += totalProduce - usableCrops;
+							cropsLeft += total_crops - usableCrops;
 						}
 					}
                     if (produce == 4 && !options.byHarvest) {
