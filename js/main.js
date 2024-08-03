@@ -424,7 +424,7 @@ function profit(crop) {
 						}
 						usableCrops = Math.floor(total_harvest * (crop.harvests - 1)) +
 							Math.min(Math.floor(crop.growth.regrow > 0 ? (options.days - crop.growth.initial - crop.growth.regrow * (crop.harvests - 1) - 1) / 3 :
-							(options.days - crop.growth.initial * crop.harvests - 1) / 3) * num_planted, num_planted * perHarvest);
+							(options.days - crop.growth.initial * crop.harvests - 1) / 3) * num_planted, num_planted * crop.harvests);
 						var maxJarProcesses = (jarCycles * options.equipment);
 						itemsMade = Math.min(maxJarProcesses, usableCrops - total_harvest);
 						
