@@ -432,7 +432,7 @@ function profit(crop) {
 							cropsLeft += total_crops - maxJarProcesses;
 						}
 						else{
-							cropsLeft += total_crops - usableCrops;
+							cropsLeft += Math.max(total_crops - usableCrops, 0);
 						}
 					}
                     if (produce == 4 && !options.byHarvest) {
