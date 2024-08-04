@@ -410,7 +410,7 @@ function profit(crop) {
                         itemsMade = itemsMadeNew;
                     }
                 }
-				console.log("crop.name: ", crop.name, "crop.harvests: ", crop.harvests, "options.days: ", options.days, "total_harvest: ", total_harvest, "num_planted: ", num_planted, "options.equipment: ", options.equipment);
+				
 				var jarCycles = 0;
                 if (options.equipment > 0) {
                     if (produce == 1 || produce == 2) {
@@ -439,6 +439,8 @@ function profit(crop) {
                         cropsLeft += Math.max(0, itemsMade - options.equipment) * 5;
                         itemsMade = Math.min(options.equipment, itemsMade);
                     }
+
+				console.log(crop.name, "Harvests: ", crop.harvests, "Harvest each: ", total_harvest, "jarCycles: ", jarCycles, "maxJarProcesses: ", maxJarProcesses, "usableCrops: ", usableCrops, "itemsMade: ",  itemsMade, "cropsLeft: ", cropsLeft);
 				}
 						
                 else {
