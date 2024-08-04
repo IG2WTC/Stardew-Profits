@@ -749,43 +749,81 @@ function updateScaleY() {
  * @return The new scale.
  */
 function updateScaleAxis() {
+
 	return d3.scale.linear()
+
 		.domain([
-			-d3.max(cropList, function(d) {
+
+			d3.min(cropList, function(d) {
+
 				if (d.drawProfit >= 0) {
+
 					return (~~((d.drawProfit + 99) / 100) * 100);
+
 				}
+
 				else {
+
 					var profit = d.drawProfit;
+
 					if (options.buySeed) {
+
 						if (d.seedLoss < profit)
+
 							profit = d.drawSeedLoss;
+
 					}
+
 					if (options.buyFert) {
+
 						if (d.fertLoss < profit)
+
 							profit = d.drawFertLoss;
+
 					}
+
 					return (~~((-profit + 99) / 100) * 100);
+
 				}
+
 			}),
+
 			d3.max(cropList, function(d) {
-				if (d.drawProfit >= 0) {
-					return (~~((d.drawProfit + 99) / 100) * 100);
+
+				if (d.drawProfit < 0) {
+
+					return (~~((d.drawProfit - 99) / 100) * 100);
+
 				}
+
 				else {
+
 					var profit = d.drawProfit;
+
 					if (options.buySeed) {
-						if (d.seedLoss < profit)
+
+						if (d.seedLoss > profit)
+
 							profit = d.drawSeedLoss;
+
 					}
+
 					if (options.buyFert) {
-						if (d.fertLoss < profit)
+
+						if (d.fertLoss > profit)
+
 							profit = d.drawFertLoss;
+
 					}
-					return (~~((-profit + 99) / 100) * 100);
+
+					return (~~((-profit - 99) / 100) * 100);
+
 				}
+
 			})])
+
 		.range([height*2, 0]);
+
 }
 
 /*
