@@ -440,7 +440,7 @@ function profit(crop) {
                         itemsMade = Math.min(options.equipment, itemsMade);
                     }
 
-				console.log(crop.name, "Harvests: ", crop.harvests, "Harvest each: ", total_harvest, "jarCycles: ", jarCycles, "maxJarProcesses: ", maxJarProcesses, "usableCrops: ", usableCrops, "itemsMade: ",  itemsMade, "cropsLeft: ", cropsLeft);
+				console.log(crop.name, "Harvests: ", crop.harvests, "Harvest each: ", total_harvest, "jarCycles: ", jarCycles, "maxJarProcesses: ", maxJarProcesses, "total_crops: ", total_crops, "usableCrops: ", usableCrops, "itemsMade: ",  itemsMade, "cropsLeft: ", cropsLeft);
 				}
 						
                 else {
