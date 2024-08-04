@@ -413,9 +413,33 @@ function profit(crop) {
 				
 				var jarCycles = 0;
                 if (options.equipment > 0) {
-                    if (produce == 1 || produce == 2) {
+                    if (produce == 1) {
                         //cropsLeft += Math.max(0, itemsMade - options.equipment) * crop.harvests;
                         //itemsMade = Math.min(options.equipment, itemsMade) * crop.harvests;
+						if (crop.growth.regrow == 0) {
+							jarCycles = Math.max(Math.floor((crop.growth.initial * (crop.harvests - 1)) + (options.days - crop.growth.initial * crop.harvests - 1) / 3), 0);
+    					}
+						else {
+        					jarCycles = Math.max(Math.floor((crop.growth.regrow * (crop.harvests - 1)) + (options.days - crop.growth.initial - crop.growth.regrow * (crop.harvests - 1) - 1)), 0);
+						}
+						usableCrops = Math.max(
+							Math.floor(total_harvest * (crop.harvests - 1)) +
+							Math.min(Math.floor(crop.growth.regrow > 0 ? (options.days - crop.growth.initial - crop.growth.regrow * (crop.harvests - 1) - 1) / 3 :
+							(options.days - crop.growth.initial * crop.harvests - 1) / 3) * num_planted, num_planted * crop.harvests)
+							, 0);
+						var maxJarProcesses = (jarCycles * options.equipment);
+						itemsMade = Math.min(maxJarProcesses, usableCrops //- total_harvest
+							);
+						
+						if (usableCrops > maxJarProcesses) {
+							cropsLeft += total_crops - maxJarProcesses;
+						}
+						else{
+							cropsLeft += Math.max(total_crops - usableCrops, 0);
+						}
+					}
+					if (produce == 2) {
+
 						if (crop.growth.regrow == 0) {
 							jarCycles = Math.max(Math.floor((crop.growth.initial * (crop.harvests - 1)) + (options.days - crop.growth.initial * crop.harvests - 1) / 3), 0);
     					}
@@ -716,43 +740,81 @@ function updateScaleY() {
  * @return The new scale.
  */
 function updateScaleAxis() {
+
 	return d3.scale.linear()
+
 		.domain([
-			-d3.max(cropList, function(d) {
+
+			d3.min(cropList, function(d) {
+
 				if (d.drawProfit >= 0) {
+
 					return (~~((d.drawProfit + 99) / 100) * 100);
+
 				}
+
 				else {
+
 					var profit = d.drawProfit;
+
 					if (options.buySeed) {
+
 						if (d.seedLoss < profit)
+
 							profit = d.drawSeedLoss;
+
 					}
+
 					if (options.buyFert) {
+
 						if (d.fertLoss < profit)
+
 							profit = d.drawFertLoss;
+
 					}
+
 					return (~~((-profit + 99) / 100) * 100);
+
 				}
+
 			}),
+
 			d3.max(cropList, function(d) {
-				if (d.drawProfit >= 0) {
-					return (~~((d.drawProfit + 99) / 100) * 100);
+
+				if (d.drawProfit < 0) {
+
+					return (~~((d.drawProfit - 99) / 100) * 100);
+
 				}
+
 				else {
+
 					var profit = d.drawProfit;
+
 					if (options.buySeed) {
-						if (d.seedLoss < profit)
+
+						if (d.seedLoss > profit)
+
 							profit = d.drawSeedLoss;
+
 					}
+
 					if (options.buyFert) {
-						if (d.fertLoss < profit)
+
+						if (d.fertLoss > profit)
+
 							profit = d.drawFertLoss;
+
 					}
-					return (~~((-profit + 99) / 100) * 100);
+
+					return (~~((-profit - 99) / 100) * 100);
+
 				}
+
 			})])
+
 		.range([height*2, 0]);
+
 }
 
 /*
