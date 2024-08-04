@@ -410,26 +410,59 @@ function profit(crop) {
                         itemsMade = itemsMadeNew;
                     }
                 }
-				
-				var jarCycles = 0;
+				var equipmentTime_days = 0;
+				var equipmentCycles = 0;
                 if (options.equipment > 0) {
-                    if (produce == 1 || produce == 2) {
+                    if (produce == 1) {
+						equipmentTime_days = 3;
                         //cropsLeft += Math.max(0, itemsMade - options.equipment) * crop.harvests;
                         //itemsMade = Math.min(options.equipment, itemsMade) * crop.harvests;
 						if (crop.growth.regrow == 0) {
-							jarCycles = Math.max(Math.floor((crop.growth.initial * (crop.harvests - 1)) + (options.days - crop.growth.initial * crop.harvests - 1) / 3), 0);
+							equipmentCycles = Math.max(Math.floor(((crop.growth.initial * (crop.harvests - 1)) + (options.days - crop.growth.initial * crop.harvests - 1)) / equipmentTime_days), 0);
     					}
 						else {
-        					jarCycles = Math.max(Math.floor((crop.growth.regrow * (crop.harvests - 1)) + (options.days - crop.growth.initial - crop.growth.regrow * (crop.harvests - 1) - 1)), 0);
+        					equipmentCycles = Math.max(Math.floor(((crop.growth.regrow * (crop.harvests - 1)) + (options.days - crop.growth.initial - crop.growth.regrow * (crop.harvests - 1) - 1))/ equipmentTime_days), 0);
 						}
 						usableCrops = Math.max(
 							Math.floor(total_harvest * (crop.harvests - 1)) +
-							Math.min(Math.floor(crop.growth.regrow > 0 ? (options.days - crop.growth.initial - crop.growth.regrow * (crop.harvests - 1) - 1) / 3 :
-							(options.days - crop.growth.initial * crop.harvests - 1) / 3) * num_planted, num_planted * crop.harvests)
-							, 0);
-						var maxJarProcesses = (jarCycles * options.equipment);
+							Math.min(Math.floor(crop.growth.regrow > 0 ? (options.days - crop.growth.initial - crop.growth.regrow * (crop.harvests - 1) - 1) / equipmentTime_days :
+							(options.days - crop.growth.initial * crop.harvests - 1) / equipmentTime_days) * num_planted, num_planted * crop.harvests), 0);
+						var maxJarProcesses = (equipmentCycles * options.equipment);
 						itemsMade = Math.min(maxJarProcesses, usableCrops //- total_harvest
-							);
+																							);
+						
+						if (usableCrops > maxJarProcesses) {
+							cropsLeft += total_crops - maxJarProcesses;
+						}
+						else{
+							cropsLeft += Math.max(total_crops - usableCrops, 0);
+						}
+					}
+					if (produce == 2) {
+						var maxKegsPerDay = 5
+						if(crop.produce.kegType == "Beer") equipmentTime_days = 1;
+						else if(crop.produce.kegType == "Coffe") equipmentTime_days = 0.1;
+						else if(crop.produce.kegType == "Tea") equipmentTime_days = 0.15;
+						else if(crop.produce.kegType == "Juice") equipmentTime_days = 4;
+						else if(crop.produce.kegType == "Pale Ale") equipmentTime_days = 2;
+						else if(crop.produce.kegType == "Wine") equipmentTime_days = 6.25;
+						else equipmentTime_days = 1000000
+						if (maxKegsPerDay < equipmentTime_days)  equipmentTime_days = maxKegsPerDay;
+						else equipmentTime_days = equipmentTime_days
+
+						if (crop.growth.regrow == 0) {
+							equipmentCycles = Math.max(Math.floor(((crop.growth.initial * (crop.harvests - 1)) + (options.days - crop.growth.initial * crop.harvests - 1)) / equipmentTime_days), 0);
+    					}
+						else {
+        					equipmentCycles = Math.max(Math.floor(((crop.growth.regrow * (crop.harvests - 1)) + (options.days - crop.growth.initial - crop.growth.regrow * (crop.harvests - 1) - 1))/ equipmentTime_days), 0);
+						}
+						usableCrops = Math.max(
+							Math.floor(total_harvest * (crop.harvests - 1)) +
+							Math.min(Math.floor(crop.growth.regrow > 0 ? (options.days - crop.growth.initial - crop.growth.regrow * (crop.harvests - 1) - 1) / equipmentTime_days :
+							(options.days - crop.growth.initial * crop.harvests - 1) / equipmentTime_days) * num_planted, num_planted * crop.harvests), 0);
+						var maxJarProcesses = (equipmentCycles * options.equipment);
+						itemsMade = Math.min(maxJarProcesses, usableCrops //- total_harvest
+																							);
 						
 						if (usableCrops > maxJarProcesses) {
 							cropsLeft += total_crops - maxJarProcesses;
@@ -443,7 +476,7 @@ function profit(crop) {
                         itemsMade = Math.min(options.equipment, itemsMade);
                     }
 
-				console.log(crop.name, "Harvests: ", crop.harvests, "Harvest each: ", total_harvest, "jarCycles: ", jarCycles, "maxJarProcesses: ", maxJarProcesses, "total_crops: ", total_crops, "usableCrops: ", usableCrops, "itemsMade: ",  itemsMade, "cropsLeft: ", cropsLeft);
+				console.log(crop.name, "Harvests: ", crop.harvests, "Harvest each: ", total_harvest, "equipmentCycles: ", equipmentCycles, "maxJarProcesses: ", maxJarProcesses, "total_crops: ", total_crops, "usableCrops: ", usableCrops, "itemsMade: ",  itemsMade, "cropsLeft: ", cropsLeft);
 				}
 						
                 else {
